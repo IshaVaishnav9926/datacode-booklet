@@ -11,18 +11,17 @@ function Navbar({ openSidebar }) {
       <div onClick={openSidebar} className='menu-icon  d-inline d-lg-none  text-white'>
         <BsJustify className="icon" />
       </div>
-      <div className='header-left ' style={{ width: '65%' }}>
-        <div class="input-group "  >
-          <input type="text" style={{ backgroundColor: '#1D1D2A' }} class="form-control text-white border border-end-0  " aria-label="Dollar amount (with dot and two decimal places)" />
-          <span class="input-group-text border border-start-0 " style={{ backgroundColor: '#1D1D2A' }}><img src={search} height={20} width={20} /></span>
+      <div className='w-65 header-left'>
+        <div className="input-group">
+          <input type="text" className="bg-imp form-control text-white border border-end-0 "  aria-label="Dollar amount (with dot and two decimal places)" />
+          <span className="bg-imp input-group-text border border-start-0"><img src={search} height={20} width={20} /></span>
         </div>
       </div>
       <div className='header-right'>
-        <span className='px-lg-3 '> <img src={Bell} style={{ height: '4vmin' }} /> </span>
-        <span className=' px-lg-3' > <img src={Ellipse} style={{ height: '7vmin' }} /> </span>
+        <span className='px-lg-3'> <img src={Bell} className='h-4vmin'/> </span>
+        <span className='px-lg-3' > <img src={Ellipse} className='h-7vmin'/> </span>
       </div>
     </header>
   )
 }
-
 export default Navbar
